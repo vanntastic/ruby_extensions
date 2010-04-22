@@ -1,8 +1,5 @@
 # Standard Ruby Core class extensions
 # Extract this out to separate files when this file gets too long
-Array.send :include, Extensions::Array
-String.send :include, Extensions::String
-Symbol.send :include, Extensions::Symbol
 
 module Extensions
   
@@ -44,3 +41,7 @@ module Extensions
   end
   
 end
+
+Array.send :include, Extensions::Array
+String.send :include, Extensions::String
+Symbol.send :include, Extensions::Symbol
