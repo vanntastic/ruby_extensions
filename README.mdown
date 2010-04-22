@@ -1,0 +1,4 @@
+Ruby Core Extensions
+====================
+
+Core class extensions that I find handy.
