@@ -40,8 +40,18 @@ module Extensions
     
   end
   
+  module Date
+    
+    # Date.now
+    def now
+      Time.now.to_date
+    end
+    
+  end
+  
 end
 
 Array.send :include, Extensions::Array
 String.send :include, Extensions::String
 Symbol.send :include, Extensions::Symbol
+Date.send :include, Extensions::Date
